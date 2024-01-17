@@ -1,1 +1,3 @@
-number -> [0-9]:+
+v name = "chris";
+
+write(name);
