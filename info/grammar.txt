@@ -1,3 +1,12 @@
-v name = "chris";
+from 'gcc-11'
 
-write(name);
+v helloworld = "Hello, World!\n";
+
+func main(argc, argv){
+    write(helloworld);
+
+    gcc-11:
+        printf("Hello, World!\n");
+    endif[gcc-11];
+}
+
