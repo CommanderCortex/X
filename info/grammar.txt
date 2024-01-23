@@ -2,11 +2,12 @@ from 'gcc-11'
 
 v helloworld = "Hello, World!\n";
 
-func main(argc, argv){
-    write(helloworld);
+function main(){
+    output();
+}
 
-    gcc-11:
-        printf("Hello, World!\n");
-    endif[gcc-11];
+int output(){
+    write(helloworld);
+    return 0;
 }
 
