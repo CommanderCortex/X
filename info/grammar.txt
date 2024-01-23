@@ -1,13 +1,11 @@
-from 'gcc-11'
+v hw = "Hello, World!\n";
 
-v helloworld = "Hello, World!\n";
-
-function main(){
-    output();
+f m(){
+    out();
 }
 
-int output(){
-    write(helloworld);
-    return 0;
+i out(){
+    w(hw);
+    rt 0;
 }
 
