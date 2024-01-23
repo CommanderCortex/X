@@ -1,0 +1,8 @@
+{
+    "C_Cpp.default.compilerPath": "\\\\wsl.localhost\\Ubuntu\\usr\\bin\\aa-features-abi",
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "token.h": "c",
+        "lexer.h": "c"
+    }
+}
