@@ -5,10 +5,10 @@
 typedef struct LEXER_STRUCT{
 	char c;
 	unsigned int i;
-	char* raw_code;	
+	char* contents;	
 } lexer_T;
 
-lexer_T* init_lexer(char* raw_code);
+lexer_T* init_lexer(char* contents);
 
 void lexer_move(lexer_T* lexer); //next char
 
