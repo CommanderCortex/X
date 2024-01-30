@@ -1,11 +1,22 @@
-v hw = "Hello, World!\n";
+#include <string>
 
-f m(){
-    out();
+string Hello = "Hello, World!\n";
+
+main(){
+    input();
+    output();
 }
 
-i out(){
-    w(hw);
-    rt 0;
+int number(a, b){
+    c = a + b;
+    return c;
 }
 
+func input(){
+    value = readln + '\0';
+    return value;
+}
+
+func output(string value){
+    write(value);
+}
