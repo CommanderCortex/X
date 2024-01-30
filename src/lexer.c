@@ -64,6 +64,23 @@ token_T* lexer_cstr(lexer_T* lexer){
 
 } //collect string 
 
+token_T* lexer_id(lexer_T* lexer){
+    lexer_move(lexer);
+
+    char* value = calloc(1, sizeof(char));
+    value[0] = '\0';
+
+    while (isalnum(lexer->c)){
+        char* s = lexer_convert_char_string(lexer);
+        value = realloc(value, strlen(value) + strlen((s) +1 )* sizeof(char));
+        strcat(value, s);
+    }
+
+    lexer_move(lexer);
+
+    return init_token(TOKEN_ID, value);
+}
+
 token_T* lexer_move_token(lexer_T* lexer, token_T* token){
     lexer_move(lexer);
     return token;

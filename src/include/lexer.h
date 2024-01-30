@@ -18,6 +18,8 @@ token_T* lexer_new(lexer_T* lexer); //get new token
 
 token_T* lexer_cstr(lexer_T* lexer); //collect string 
 
+token_T* lexer_id(lexer_T* lexer); //collect id 
+
 token_T* lexer_move_token(lexer_T* lexer, token_T* token); //Move lexer with token in stack
 
 char* lexer_convert_char_string(lexer_T* lexer); // get the current char as a string value
