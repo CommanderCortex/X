@@ -1,6 +1,7 @@
 #include "include/lexer.h"
 #include "stdlib.h"
 #include "string.h"
+#include "ctype.h"
 
 
 lexer_T* init_lexer(char* raw_code){
